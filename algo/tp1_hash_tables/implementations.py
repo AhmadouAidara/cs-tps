@@ -6,13 +6,19 @@ class Container(ABC):
     """Contract: set-like container supporting add, membership and length."""
 
     @abstractmethod
-    def add(self, x: Any) -> None: ...
+    def add(self, x: Any) -> None: 
+        """Add an element to the container"""
+        pass
 
     @abstractmethod
-    def __contains__(self, x: Any) -> bool: ...
+    def __contains__(self, x: Any) -> bool: 
+        """Return True if x is in the container"""
+        pass
 
     @abstractmethod
-    def __len__(self) -> int: ...
+    def __len__(self) -> int: 
+        """Return number of elements in the container"""
+        pass
 
 class ListContainer(Container):
     """Baseline container backed by a Python list (O(n) membership)."""

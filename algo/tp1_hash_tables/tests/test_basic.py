@@ -1,7 +1,10 @@
+from algo.tp1_hash_tables.implementations import ListContainer, SetContainer
+from algo.tp1_hash_tables.hashtable import (
+    HashTableContainer,
+    ResizingHashTableContainer,
+    LinkedListHashTableContainer,
+)
 import random
-from implementations import ListContainer, SetContainer
-from hashtable import HashTableContainer, ResizingHashTableContainer, LinkedListHashTableContainer
-
 def _smoke(c):
     xs = list(range(200))
     random.shuffle(xs)

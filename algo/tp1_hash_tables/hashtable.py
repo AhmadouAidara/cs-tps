@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import Any, Optional, Iterable, List
-from implementations import Container
+from algo.tp1_hash_tables.implementations import Container  
 
 class HashTableContainer(Container):
     """Separate-chaining hash table with a fixed number of buckets (lists)."""
